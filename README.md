@@ -38,13 +38,35 @@ An AI-powered real-time **spitting detection system** designed to monitor spitti
 
 ```
 Real-time-spit-detection-system/
-├── frontend/           # React app (completed)
-│   └── CameraPage.jsx
-├── backend/            # Python backend (in progress)
-│   └── app.py
-├── model/              # YOLOv11 trained model files
-├── dataset/            # Roboflow dataset config
-└── README.md
+├── backend/
+│   ├── static/spits/         # Captured spit images
+│   ├── best.pt               # YOLOv11 model
+│   └── detect.py             # Detection logic
+│
+├── frontend/
+│   ├── src/
+│   │   ├── assets/
+│   │   ├── component/
+│   │   │   ├── AddStudent.jsx
+│   │   │   ├── AdminLogin.jsx
+│   │   │   ├── AllStudents.jsx
+│   │   │   ├── Camera.jsx
+│   │   │   ├── Dashboard.jsx
+│   │   │   ├── Sidebar.jsx
+│   │   │   └── SpittingImages.jsx
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   └── *.css
+│   ├── public/
+│   ├── index.html
+│   ├── package.json
+│   └── vite.config.js
+│
+├── NewSpitDetectionSvt.py
+├── main.py
+├── README.md
+└── best.pt
+
 ```
 
 ---
